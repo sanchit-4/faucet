@@ -1,0 +1,38 @@
+/* src/app/globals.css */
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Define CSS variables for our color theme */
+:root {
+  --background-color: #121212;
+  --card-background: #1e1e1e;
+  --primary-text: #ffffff;
+  --secondary-text: #a0a0a0;
+  --accent-color: #9945ff; /* A nice purple accent */
+  --accent-glow: rgba(153, 69, 255, 0.2);
+  --border-color: #333333;
+}
+
+body {
+  color: var(--primary-text);
+  background: var(--background-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Custom styles for the WalletMultiButton */
+.wallet-adapter-button-trigger {
+  background-color: var(--accent-color) !important;
+  color: var(--primary-text) !important;
+  font-weight: bold;
+  border-radius: 8px !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.wallet-adapter-button-trigger:hover {
+  background-color: #a35aff !important; /* A lighter purple on hover */
+}
