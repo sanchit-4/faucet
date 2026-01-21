@@ -183,7 +183,7 @@ async function main() {
 
     // --- 2. Load the program ---
     const idl = JSON.parse(fs.readFileSync("./target/idl/faucet.json", "utf8"));
-    const programId = new anchor.web3.PublicKey("BFwCjYFjnPfgZYaV2SaBMotZK57MtGPaHXRcpPgzpqe1"); // Your Program ID
+    const programId = new anchor.web3.PublicKey("8jTt3KWi5dczJxJcLRLMXuaFFe89NPqCrD6921YW3px9"); // Your Program ID
     const program = new anchor.Program<Faucet>(idl, provider);
 
     // --- 3. The core logic (CORRECTED) ---
